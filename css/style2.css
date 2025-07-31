@@ -65,7 +65,7 @@ body {
 }
 
 /* Hero Section */
-.hero {
+/* .hero {
     position: relative;
     height: 100vh;
     min-height: 600px;
@@ -73,6 +73,19 @@ body {
     display: flex;
     align-items: center;
     color: white;
+} */
+
+.hero {
+    /* fallback kalau browser belum support */
+    min-height: 100vh;
+    /* gunakan dynamic viewport di browser yang sudah support */
+    height: 100dvh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+    /* … sisanya tetap … */
 }
 
 .hero::before {
