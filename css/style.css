@@ -1,0 +1,148 @@
+body {
+    font-family: 'Segoe UI', 
+    sans-serif;
+}
+
+.container {
+    max-width: 120rem !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+}
+.hero video {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.hero::before {
+    content: "";
+    position: absolute;top:0;left:0;right:0;bottom:0;
+    background: rgba(0,0,0,0.4);
+    z-index:0;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    animation: fadeInUp 1.5s ease;
+}
+@keyframes fadeInUp {
+    from {opacity:0;transform:translateY(50px);} to {opacity:1;transform:translateY(0);}
+}
+
+/* di bagian <style> Anda tambahkan: */
+.destinasi-card {
+    overflow: hidden;
+    position: relative;
+}
+.destinasi-vertical {
+    height: 500px;        /* tinggi fix untuk dua kartu vertikal */
+}
+.destinasi-horizontal {
+    height: 300px;        /* tinggi fix untuk kartu horizontal */
+}
+.destinasi-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    /* memastikan gambar memenuhi container */
+    transition: transform .3s ease;
+}
+.destinasi-card:hover img {
+    transform: scale(1.1);
+}
+.destinasi-card .overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+.destinasi-card:hover .overlay-text {
+    opacity: 1;
+}
+
+/* Overlay Menu */
+.menu-overlay {
+    position: fixed; 
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#fdfdfd;display:none;
+    flex-direction:column;
+    padding:60px 20px;
+    overflow-y:auto;
+    z-index:2000;
+}
+.menu-overlay.active {
+    display:flex;
+    animation:fadeIn .5s;
+}
+.menu-overlay h4 {
+    margin-top:30px;
+    font-weight:bold;
+}
+.menu-overlay a {
+    display:block;
+    font-size:1.1rem;
+    margin:4px 0;
+    color:#333;
+    text-decoration:none;
+}
+.menu-close {
+    font-size:2rem;
+    position:absolute;
+    top:20px;
+    right:30px;
+    cursor:pointer;
+}
+@keyframes fadeIn {
+    from{opacity:0}to{opacity:1}
+}
+
+/* Sections */
+section h2 {
+    font-weight:700;
+    margin-bottom:1.5rem;
+}
+.gallery img {
+    transition: transform .3s, box-shadow .3s;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+footer {
+    background:#003366;
+    color:#fff;
+}
+.btn-primary {
+    background:#00704A;
+    border:none;
+}
+.btn-primary:hover {
+    background:#005d3c;
+}
+
+
+@media screen and (max-width: 767px) {
+    .container {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+    }
+}
