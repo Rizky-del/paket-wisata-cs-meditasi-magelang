@@ -293,6 +293,12 @@ body {
     margin: 10px 0;
 }
 
+.pricing-card .price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .pricing-features {
     padding: 30px;
 }
