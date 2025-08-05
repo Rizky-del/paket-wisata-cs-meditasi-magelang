@@ -12,14 +12,6 @@ body {
     overflow-x: hidden;
 }
 
-/* .container {
-    max-width: 120rem !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    padding-left: 3rem !important;
-    padding-right: 3rem !important;
-} */
-
 /* Navbar */
 .navbar {
     background-color: rgba(255, 255, 255, 0.95);
@@ -64,29 +56,17 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Hero Section */
-.hero {
+/* Package Header */
+.destination-hero {
     position: relative;
-    height: 100vh;
-    min-height: 600px;
+    height: 75vh;
+    min-height: 500px;
     overflow: hidden;
     display: flex;
     align-items: center;
-    color: white;
 }
 
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
-    z-index: 1;
-}
-
-.hero video {
+.destination-hero video {
     position: absolute;
     top: 0;
     left: 0;
@@ -96,94 +76,69 @@ body {
     z-index: 0;
 }
 
-.hero-content {
+.destination-hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.destination-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.destination-hero-content {
     position: relative;
     z-index: 2;
-    max-width: 700px;
-}
-
-.hero h1 {
-    font-size: 3.5rem;
-    font-weight: 800;
-    margin-bottom: 1.5rem;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
-
-.hero p {
-    font-size: 1.5rem;
-    font-weight: 300;
-    margin-bottom: 2rem;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-.btn-hero {
-    background-color: var(--accent);
     color: white;
+}
+
+.package-duration {
     font-size: 1.2rem;
-    font-weight: 600;
-    padding: 12px 30px;
-    border-radius: 30px;
-    transition: all 0.3s;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background: var(--accent);
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
 }
 
-.btn-hero:hover {
-    background-color: #d35400;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+/* Package Content */
+.package-content {
+    padding: 50px 0;
 }
 
-/* Section Styles */
 .section-title {
     position: relative;
     font-weight: 800;
     margin-bottom: 2.5rem;
-    text-align: center;
     color: var(--secondary);
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--accent);
 }
 
-.section-title::after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
-    background-color: var(--accent);
-    border-radius: 2px;
-}
-
-.section-padding {
-    padding: 80px 0;
-}
-
-.bg-light-custom {
-    background-color: #f8f9fa;
-}
-
-/* About Section */
-.about-content {
-    display: flex;
-    align-items: center;
-}
-
-.about-text {
-    padding-right: 30px;
-}
-
-.about-img {
+.feature-card {
+    background: white;
     border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    padding: 25px;
+    margin-bottom: 25px;
+    height: 100%;
 }
 
-.about-img img {
-    transition: transform 0.5s ease;
-}
-
-.about-img:hover img {
-    transform: scale(1.05);
+.feature-card h3 {
+    color: var(--primary);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary);
 }
 
 .feature-list {
@@ -195,7 +150,6 @@ body {
     margin-bottom: 15px;
     padding-left: 30px;
     position: relative;
-    font-size: 1.1rem;
 }
 
 .feature-list li::before {
@@ -208,60 +162,159 @@ body {
     color: var(--primary);
 }
 
-/* Destinations */
-.destination-card {
-    border-radius: 10px;
-    overflow: hidden;
-    height: 100%;
-    position: relative;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.4s ease;
-}
-
-.destination-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-}
-
-.destination-img {
-    height: 300px;
-    overflow: hidden;
-}
-
-.destination-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.destination-card:hover .destination-img img {
-    transform: scale(1.1);
-}
-
-.destination-content {
-    padding: 20px;
+/* Schedule */
+.schedule-card {
     background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    padding: 25px;
+    margin-bottom: 25px;
 }
 
-.destination-title {
-    font-weight: 700;
-    color: var(--secondary);
-    margin-bottom: 10px;
+.schedule-card h3 {
+    color: var(--primary);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary);
 }
 
-.btn-destination {
-    background-color: var(--primary);
-    color: white;
-    border: none;
-    padding: 8px 20px;
-    border-radius: 30px;
+.schedule-item {
+    display: flex;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.schedule-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.schedule-time {
+    flex: 0 0 120px;
     font-weight: 600;
-    transition: all 0.3s;
+    color: var(--secondary);
 }
 
-.btn-destination:hover {
-    background-color: #005d3c;
+.schedule-content {
+    flex: 1;
+}
+
+.schedule-content h4 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: var(--dark);
+}
+
+.schedule-content p {
+    margin-bottom: 0;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Booking Sidebar */
+.booking-sidebar {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 25px;
+    position: sticky;
+    top: 100px;
+}
+
+.booking-sidebar h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: var(--primary);
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.booking-sidebar h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--accent);
+}
+
+.price-info {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 1.2rem;
+}
+
+.discounted-price {
+    font-size: 2rem;
+    font-weight: 800;
+    /* color: var(--secondary); */
+    margin: 5px 0;
+}
+
+.discounted-price-samping {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin: 5px 0;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.package-duration {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.btn-booking {
+    background-color: var(--accent);
+    color: white;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 30px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s;
+    margin-bottom: 20px;
+}
+
+.btn-booking:hover {
+    background-color: #d35400;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.contact-info {
+    text-align: center;
+    color: #666;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+}
+
+.contact-info i {
+    margin-right: 8px;
+    color: var(--primary);
 }
 
 /* Pricing Section */
@@ -408,6 +461,23 @@ body {
     font-style: italic;
 }
 
+.btn-hero {
+    background-color: var(--accent);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 30px;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-hero:hover {
+    background-color: #d35400;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
 /* Footer */
 footer {
     background-color: var(--secondary);
@@ -482,23 +552,11 @@ footer {
     color: #aaa;
 }
 
-/* Responsive Adjustments */
+/* Responsive */
 @media (max-width: 992px) {
-    .hero h1 {
-        font-size: 2.8rem;
-    }
-    
-    .hero p {
-        font-size: 1.2rem;
-    }
-    
-    .about-content {
-        flex-direction: column;
-    }
-    
-    .about-text {
-        padding-right: 0;
-        margin-bottom: 30px;
+    .booking-sidebar {
+        position: static;
+        margin-top: 40px;
     }
 
     .pricing-row .col-md-4 {
@@ -517,18 +575,10 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.3rem;
+    .section-title {
+        font-size: 1.5rem;
     }
-    
-    .hero p {
-        font-size: 1.1rem;
-    }
-    
-    .section-padding {
-        padding: 60px 0;
-    }
-    
+
     .price {
         font-size: 2.8rem;
     }
@@ -547,10 +597,6 @@ footer {
 }
 
 @media (max-width: 576px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
-    
     .btn-hero {
         font-size: 1rem;
         padding: 10px 25px;
