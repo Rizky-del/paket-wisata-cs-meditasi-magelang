@@ -266,7 +266,7 @@ body {
     margin: 5px 0;
 }
 
-.discount-badge {
+.discount-badge-booking {
     position: absolute;
     top: 0;
     right: 0;
@@ -314,6 +314,101 @@ body {
 
 .contact-info i {
     margin-right: 8px;
+    color: var(--primary);
+}
+
+/* WhatsApp Booking Section */
+.whatsapp-booking {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #eee;
+}
+
+.whatsapp-booking h4 {
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--accent);
+}
+
+.booking-steps {
+    margin-top: 20px;
+}
+
+.step {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.step-number {
+    background-color: var(--primary);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-content strong {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--dark);
+}
+
+.step-content p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0;
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 30px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.whatsapp-info {
+    text-align: center;
+    background-color: #e8f5e9;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.whatsapp-info p {
+    margin-bottom: 5px;
+}
+
+.whatsapp-info p:first-child {
+    font-weight: 600;
+    margin-bottom: 10px;
     color: var(--primary);
 }
 
