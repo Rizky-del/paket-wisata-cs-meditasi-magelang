@@ -486,6 +486,12 @@ footer {
 
 /* Responsive Adjustments */
 @media (max-width: 992px) {
+    .destination-row .col-md-4 {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto 30px;
+    }
+
     .hero h1 {
         font-size: 2.8rem;
     }
@@ -519,6 +525,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
     .hero h1 {
         font-size: 2.3rem;
     }
