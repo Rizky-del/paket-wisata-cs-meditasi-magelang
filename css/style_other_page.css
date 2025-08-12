@@ -51,7 +51,8 @@ body {
 }
 
 .btn-book:hover {
-    background-color: #005d3c;
+    background-color: var(--accent);
+    color: white;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -283,7 +284,8 @@ body {
 }
 
 .btn-destination:hover {
-    background-color: #005d3c;
+    background-color: var(--accent);
+    color: white;
 }
 
 /* Footer */
