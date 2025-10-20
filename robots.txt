@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rizky-del.github.io/paket-wisata-cs-meditasi-magelang/sitemap.xml
