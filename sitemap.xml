@@ -1,15 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
     <url>
         <loc>https://rizky-del.github.io/paket-wisata-cs-meditasi-magelang/</loc>
-        <loc>https://rizky-del.github.io/paket-wisata-cs-meditasi-magelang/other_page/borobudur_page.html</loc>
-        <loc>https://rizky-del.github.io/paket-wisata-cs-meditasi-magelang/other_page/terapi_page.html</loc>
-        <loc>https://rizky-del.github.io/paket-wisata-cs-meditasi-magelang/other_page/kiai_langgeng_page.html</loc>
-        <loc>https://rizky-del.github.io/paket-wisata-cs-meditasi-magelang/other_page/informasi_paket_1.html</loc>
-        <loc>https://rizky-del.github.io/paket-wisata-cs-meditasi-magelang/other_page/informasi_paket_2.html</loc>
-        <loc>https://rizky-del.github.io/paket-wisata-cs-meditasi-magelang/other_page/informasi_paket_3.html</loc>
         <lastmod>2025-10-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
+
+    <url>
+        <loc>https://rizky-del.github.io/paket-wisata-cs-meditasi-magelang/other_page/borobudur_page.html</loc>
+        <lastmod>2025-10-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://rizky-del.github.io/paket-wisata-cs-meditasi-magelang/other_page/terapi_page.html</loc>
+        <lastmod>2025-10-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://rizky-del.github.io/paket-wisata-cs-meditasi-magelang/other_page/kiai_langgeng_page.html</loc>
+        <lastmod>2025-10-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://rizky-del.github.io/paket-wisata-cs-meditasi-magelang/other_page/informasi_paket_1.html</loc>
+        <lastmod>2025-10-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://rizky-del.github.io/paket-wisata-cs-meditasi-magelang/other_page/informasi_paket_2.html</loc>
+        <lastmod>2025-10-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://rizky-del.github.io/paket-wisata-cs-meditasi-magelang/other_page/informasi_paket_3.html</loc>
+        <lastmod>2025-10-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
 </urlset>
